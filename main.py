@@ -1,13 +1,10 @@
-import os
 
-from fastapi import FastAPI
+from fastapi import FastAPI, status
+from fastapi.responses import RedirectResponse
 from openai import OpenAI
+
 from environ import key
 from models import UserCreate
-from fastapi.responses import RedirectResponse
-from fastapi import status
-
-
 
 app = FastAPI()
 
